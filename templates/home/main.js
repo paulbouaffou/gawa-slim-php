@@ -1,11 +1,11 @@
-require('./css/main.css');
+require('./main.css');
 
 // Author: Paul Bouaffou
 // License: MIT
 // Description: Text Javascript
 
 
-/* -------------- Vérifier les valeurs saisies dans le champ avant sa validation ---------------*/
+/* -------------- Vérifier les valeurs saisies dans le champ avant sa validation --------------*/
 
 
         function check(){

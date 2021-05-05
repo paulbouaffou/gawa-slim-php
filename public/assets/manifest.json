@@ -1,3 +1,6 @@
 {
-  "home/js/main.js": "assets/home/js/main.js"
+  "home/main.css": "assets/home/main.css",
+  "home/main.js": "assets/home/main.js",
+  "layout/layout.css": "assets/layout/layout.css",
+  "layout/layout.js": "assets/layout/layout.js"
 }

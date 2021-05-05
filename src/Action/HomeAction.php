@@ -27,7 +27,7 @@ final class HomeAction
             'title' => 'Gawa WikiCiv'
         ];
         
-        return $this->twig->render($response, 'home/home.twig', $viewData);
+        return $this->twig->render($response, 'home/home.html', $viewData);
 
     }
 

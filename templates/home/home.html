@@ -1,16 +1,16 @@
-{% extends "layout/layout.twig" %}
+{% extends "layout/layout.html" %}
 
 {% block css %}
-    {% webpack_entry_css 'home/css/main' %}
+    {% webpack_entry_css 'home/main' %}
 {% endblock %}
 
 {% block js %}
-    {% webpack_entry_js 'home/js/main' %}
+    {% webpack_entry_js 'home/main' %}
 {% endblock %}
 
 {% block content %}
 
-	<form method="POST" class="form-signin" name="frm" onsubmit="">
+	<form method="POST" class="form-signin" name="frm" onsubmit="return check()">
       <label for="inputNumber" class="sr-only">Saisir un nombre</label>
       <input type="text" id="inputNumber" class="form-control" placeholder="Saisir un nombre entier inférieur ou égal à {{name}}" name="limit">
       <span id="msg"></span>

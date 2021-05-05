@@ -81,19 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./templates/home/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./templates/home/main.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./templates/home/js/main.js":
-/*!***********************************!*\
-  !*** ./templates/home/js/main.js ***!
-  \***********************************/
+/***/ "./templates/home/main.css":
+/*!*********************************!*\
+  !*** ./templates/home/main.css ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(!(function webpackMissingModule() { var e = new Error(\"Cannot find module './css/main.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\r\n\r\n// Author: Paul Bouaffou\r\n// License: MIT\r\n// Description: Text Javascript\r\n\r\n\r\n/* -------------- Vérifier les valeurs saisies dans le champ avant sa validation ---------------*/\r\n\r\n\r\n        function check(){\r\n             var nbr=document.frm.limit.value;\r\n             if (isNaN(nbr)){\r\n                 document.getElementById(\"msg\").innerHTML=\"Entrez uniquement une valeur numérique !\";\r\n                 return false;\r\n             }else if (nbr == \"\" || nbr == null) {\r\n             \tdocument.getElementById(\"msg\").innerHTML=\"Veuillez saisir une valeur numérique !\";\r\n             \treturn false;\r\n             }else if (nbr < 0) {\r\n                document.getElementById(\"msg\").innerHTML=\"Entrez uniquement un nombre positif !\";\r\n                return false;\r\n            }else if (nbr != parseInt(nbr)) {\r\n                document.getElementById(\"msg\").innerHTML=\"Entrez uniquement un nombre entier !\";\r\n                return false;\r\n            }else if (nbr == 0){\r\n                document.getElementById(\"msg\").innerHTML=\"Entrez uniquement une valeur numérique non nul !\";\r\n                return false;               \r\n            }else{\r\n                 return true;\r\n             }\r\n         }\n\n//# sourceURL=webpack:///./templates/home/js/main.js?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./templates/home/main.css?");
+
+/***/ }),
+
+/***/ "./templates/home/main.js":
+/*!********************************!*\
+  !*** ./templates/home/main.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./main.css */ \"./templates/home/main.css\");\r\n\r\n// Author: Paul Bouaffou\r\n// License: MIT\r\n// Description: Text Javascript\r\n\r\n\r\n/* -------------- Vérifier les valeurs saisies dans le champ avant sa validation --------------*/\r\n\r\n\r\n        function check(){\r\n             var nbr=document.frm.limit.value;\r\n             if (isNaN(nbr)){\r\n                 document.getElementById(\"msg\").innerHTML=\"Entrez uniquement une valeur numérique !\";\r\n                 return false;\r\n             }else if (nbr == \"\" || nbr == null) {\r\n             \tdocument.getElementById(\"msg\").innerHTML=\"Veuillez saisir une valeur numérique !\";\r\n             \treturn false;\r\n             }else if (nbr < 0) {\r\n                document.getElementById(\"msg\").innerHTML=\"Entrez uniquement un nombre positif !\";\r\n                return false;\r\n            }else if (nbr != parseInt(nbr)) {\r\n                document.getElementById(\"msg\").innerHTML=\"Entrez uniquement un nombre entier !\";\r\n                return false;\r\n            }else if (nbr == 0){\r\n                document.getElementById(\"msg\").innerHTML=\"Entrez uniquement une valeur numérique non nul !\";\r\n                return false;               \r\n            }else{\r\n                 return true;\r\n             }\r\n         }\n\n//# sourceURL=webpack:///./templates/home/main.js?");
 
 /***/ })
 
